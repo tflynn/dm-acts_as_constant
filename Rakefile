@@ -5,13 +5,13 @@ require 'rake/testtask'
 require 'find'
 
 name = 'dm-acts_as_constant'
-version = '2.0.5'
+version = '0.9.3'
 
 gem_spec = Gem::Specification.new do |s|
   s.name = name
   s.version = version
   s.summary = %{ActsAsConstant for DataMapper}
-  s.description = %{ActsAsConstant for DataMapper is based on ActsAsConstant for ActiveRecord developed by Mark Bates}
+  s.description = %{ActsAsConstant for DataMapper is based on ActsAsConstant 1.0.5 for ActiveRecord developed by Mark Bates}
   s.author = "Tracy Flynn"
   #s.email = ""
   #s.homepage = ""
