@@ -5,7 +5,7 @@ require 'rake/testtask'
 require 'find'
 
 name = 'dm-acts_as_constant'
-version = '0.9.3'
+version = '0.9.5'
 
 gem_spec = Gem::Specification.new do |s|
   s.name = name
@@ -22,9 +22,9 @@ gem_spec = Gem::Specification.new do |s|
   s.require_path = 'lib'
 #  s.autorequire = "dm-acts_as_contant"
   # These next two are patches for datamapper 0.9.3 dependency problems
-  s.add_dependency("facets","2.4.1")
+  s.add_dependency("facets","2.4.4")
   s.add_dependency("english","0.2.0")
-  s.add_dependency("dm-core", "0.9.3")
+  s.add_dependency("dm-core", "0.9.5")
   s.has_rdoc = false
   s.extra_rdoc_files = ["README"]
 end

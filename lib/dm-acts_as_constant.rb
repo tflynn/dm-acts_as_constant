@@ -52,6 +52,8 @@ module ActsAsConstantClassMethods
             self.ACTS_AS_CONSTANT_CONSTANTS.clear
             # eval %{self.ACTS_AS_CONSTANT_CONSTANTS.clear}
             
+            Mack::Database.establish_connection
+            
             rows = self.to_s.constantize.all
 
             rows.each do |rec|
